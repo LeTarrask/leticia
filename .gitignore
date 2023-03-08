@@ -3,6 +3,7 @@
 
 # Ignore local design files
 /local_images
+/local_files
 
 # Hugo files
 /resources/
