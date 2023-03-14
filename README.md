@@ -4,7 +4,7 @@ Landing page made with Bootstrap.
 
 **STATUS: This project is actively used in production environments.**
 
-!(Site screenshot)[https://github.com/LeTarrask/leticia/blob/main/assets/img/site_screenshot.png]
+![Site screenshot](https://github.com/LeTarrask/leticia/blob/main/assets/img/site_screenshot.png)
 
 ## Features
 
