@@ -11627,7 +11627,7 @@ body {
 }
 
 .professional-section {
-  border-left: 0rem !important;
+  border-left: 0rem transparent !important;
 }
 
 .projects-section {
