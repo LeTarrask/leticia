@@ -42,7 +42,7 @@ Thumbs.db
 .komodotools
 *.komodoproject
 
-# Folders to ignore
+# Files & Folders to ignore
 /js/coverage/
 /node_modules/
 .DS_Store
