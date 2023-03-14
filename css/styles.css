@@ -11,6 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --cc-darkbrown: 128,100,83;
+  --cc-lightbrown: 172, 141,123;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #7464a1;
@@ -239,11 +241,12 @@ sup {
 }
 
 a {
-  color: #64a19d;
+  color: #806453;
   text-decoration: underline;
+  font-weight: bold;
 }
 a:hover {
-  color: #50817e;
+  color: var(--cc-lightbrown);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3032,26 +3035,27 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
+/* cores escolhidas por cris, add pro resto dos links */
 .btn-primary {
-  color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  color: #ac8d7b;
+  background-color: #fff;
+  border-color: #fff;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  background-color: #ba9c8b;
+  border-color: #ba9c8b;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+  background-color: #806453;
+  border-color: #806453;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #50817e;
-  border-color: #4b7976;
+  background-color: #806453;
+  border-color: #806453;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
@@ -6593,7 +6597,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #64a19d;
+  color: var(--cc-darkbrown);
 }
 .link-primary:hover, .link-primary:focus {
   color: #50817e;
@@ -6635,7 +6639,7 @@ textarea.form-control-lg {
 }
 
 .link-light {
-  color: #f8f9fa;
+  color: var(--cc-darkbrown);
 }
 .link-light:hover, .link-light:focus {
   color: #f9fafb;
@@ -7894,7 +7898,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--cc-darkbrown), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -8026,6 +8030,11 @@ textarea.form-control-lg {
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-brown {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--cc-lightbrown), var(--bs-bg-opacity)) !important;
 }
 
 .bg-white {
@@ -11534,15 +11543,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #806453;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #806453;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: var(--cc-darkbrown);
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #806453;
   }
 }
 
@@ -11562,7 +11571,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(128, 100, 83, 0) 0%, rgba(128, 100, 83, 0.5) 75%, rgba(128, 100, 83, 1) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11570,8 +11579,8 @@ body {
 }
 .masthead h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 4rem;
+  line-height: 4rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
@@ -11594,7 +11603,7 @@ body {
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
+    font-size: 4rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
@@ -11606,7 +11615,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(128, 100, 83, 1) 0%, rgba(128, 100, 83, 0.9) 75%, rgba(128, 100, 83, 0.8) 100%);
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11621,7 +11630,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #806453;
   }
 }
 .projects-section .project-text {
@@ -11663,7 +11672,7 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #806453;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -11672,7 +11681,7 @@ body {
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #806453;
   border-width: 0.25rem;
   width: 3rem;
 }
