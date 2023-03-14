@@ -11626,6 +11626,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.professional-section {
+  border-left: 0rem !important;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
@@ -11651,10 +11655,6 @@ body {
     border-width: 0.25rem;
     width: 30%;
   }
-}
-
-.professional-section {
-  border-left: 0rem !important;
 }
 
 .signup-section {
