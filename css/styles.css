@@ -610,6 +610,11 @@ progress {
   height: auto;
 }
 
+.img-icon {
+  max-width: 75px;
+  padding-bottom: 2rem;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -11488,8 +11493,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #806453;
+  border: 1px solid #806453;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11646,6 +11651,10 @@ body {
     border-width: 0.25rem;
     width: 30%;
   }
+}
+
+.professional-section {
+  border-left: 0rem !important;
 }
 
 .signup-section {
