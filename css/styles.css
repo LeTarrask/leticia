@@ -12685,6 +12685,7 @@ body {
 
 .projects-section {
   padding: 10rem 0;
+  justify-content: space-between;
 }
 
 .projects-section .featured-text {
@@ -12701,7 +12702,12 @@ body {
   .projects-section .featured-text-line-right {
     border-right: 0.5rem solid #806453;
     padding: 0 2rem 0 0;
+    margin: 0 2rem 0 0;
   }
+}
+
+.projects-section .img-fluid.right {
+  margin-left: 10rem;
 }
 
 .projects-section .project-text {
